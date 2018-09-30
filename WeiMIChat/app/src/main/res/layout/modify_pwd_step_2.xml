@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    >
+    <include layout="@layout/common_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+    <EditText
+        android:id="@+id/checkCode"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:hint="请输入验证码"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/loginedittext_selector"
+        android:drawableLeft="@drawable/invaite_code"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        />
+    <Button
+        android:id="@+id/goToModifyPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginbutton"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:text="下一步"/>
+    </LinearLayout>
+</LinearLayout>

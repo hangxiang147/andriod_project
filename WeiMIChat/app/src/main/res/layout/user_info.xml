@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yxl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebef"
+    android:orientation="vertical">
+    <include
+        layout="@layout/common_title"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="头像"/>
+        <ImageView
+            android:id="@+id/userinfo_header"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/head" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#efeeee" />
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/userInfo_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@color/white"
+        yxl:left_text="昵称"
+        yxl:right_text=""
+        />
+
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/userInfo_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@color/white"
+        yxl:left_text="性别"
+        yxl:right_text="" />
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/userInfo_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@color/white"
+        yxl:left_text="邮箱"
+        yxl:right_text="" />
+
+</LinearLayout>

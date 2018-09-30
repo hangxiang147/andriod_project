@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.weimi.weimichat"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    configurations.all{
+        resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
+    }
+    sourceSets{
+        main{
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+   // androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    ///compile files('libs/eventbus.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/okhttp-2.7.0.jar')
+    //compile files('libs/okio-1.6.0.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/jsoup-1.11.3.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.yalantis:ucrop:1.4.1'
+    compile project(':IMKit')
+    //compile project(':CallLib')
+    compile project(':IMLib')
+    //compile project(':RCSticker')
+    //compile project(':RedPacket')
+}

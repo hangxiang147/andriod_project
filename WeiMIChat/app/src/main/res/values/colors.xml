@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#018FD1</color>
+    <color name="colorPrimaryDark">#018FD1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="common_bg">#ff4cbd71</color>
+    <color name="green">#00ff00</color>
+    <color name="low_green">#17b622</color>
+    <color name="yellow">#ffff00</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="translucent">#00000000</color>
+    <color name="nav">#515151</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="gain_code">#ff9933</color>
+    <color name="login_bg">#018FD1</color>
+    <color name="textColor">#cdcdcd</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="text_line_color">#dfdfdd</color>
+    <color name="press">#e8e8e8</color>
+    <color name="weiMi_bg">#f0f0f6</color>
+    <color name="text_color">#353535</color>
+    <!--SWITCH-->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+</resources>

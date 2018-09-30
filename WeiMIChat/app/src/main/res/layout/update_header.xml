@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/common_title"/>
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/head"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/headimageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbutton"
+        android:text="手机照相"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/picture"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbutton"
+        android:text="本地相册"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

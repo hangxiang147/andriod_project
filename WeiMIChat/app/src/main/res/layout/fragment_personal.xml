@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yxl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weiMi_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_blur"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_blur"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:text="张三"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/label"
+                android:layout_below="@id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:text="邀请码:"/>
+            <TextView
+                android:id="@+id/checkCode"
+                android:layout_below="@id/user_name"
+                android:layout_alignLeft="@id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:text="YSHXJS"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/signName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@drawable/ic_sex"
+        yxl:left_text="我的积分"
+        yxl:right_text="" />
+
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        yxl:left_icon="@drawable/ic_nick_name"
+        yxl:left_text="个人信息"
+        yxl:right_text=""
+        />
+
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@drawable/ic_pass"
+        yxl:left_text="修改密码"
+        yxl:right_text="" />
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@drawable/ic_about"
+        yxl:left_text="版本"
+        yxl:right_text=""
+        yxl:show_right_arrow="false"/>
+    <com.weimi.weimichat.view.PersonalItemView
+        android:id="@+id/exitLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        yxl:left_icon="@drawable/ic_sign_name"
+        yxl:left_text="退出"
+        yxl:right_text="" />
+</LinearLayout>
